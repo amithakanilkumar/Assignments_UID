@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Image Layout</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .container img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 2px solid black;
+        }
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg" alt="Cute Cat">
+        <img src="https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg" alt="Sleeping Cat">
+        <img src="https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg" alt="Playful Kitten">
+    </div>
+
+</body>
+</html>

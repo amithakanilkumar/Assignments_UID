@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Website</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-template-rows: auto 1fr;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .header {
+            grid-column: span 3;
+            text-align: center;
+            padding: 20px;
+            border: 1px solid black;
+            font-weight: bold;
+            background-color: #f4f4f4;
+        }
+
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            background-color: #ddd;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            padding: 10px;
+            border: 1px solid black;
+            margin: 5px 0;
+            display: block;
+            background-color: white;
+            color: black;
+        }
+
+        .sidebar a:hover {
+            background-color: lightgray;
+        }
+
+        .main-content {
+            border: 1px solid black;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .organized {
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+            background-color: #e8e8e8;
+        }
+
+        .organized div {
+            border: 1px solid black;
+            margin: 10px auto;
+            padding: 20px;
+            width: 80%;
+            background-color: white;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto auto auto auto;
+            }
+
+            .header {
+                grid-column: span 1;
+            }
+
+            .sidebar, .main-content, .organized {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">CLUB Website</div>
+
+        <div class="sidebar">
+            <a href="https://www.google.com" target="_blank">Google</a>
+            <a href="https://www.wikipedia.org" target="_blank">Wikipedia</a>
+            <a href="https://www.clubwebsite.com" target="_blank">Club Home</a>
+        </div>
+
+        <div class="main-content">
+            <h2>Welcome to Our Club</h2>
+            <p>This club is dedicated to bringing together like-minded individuals who share a passion for [Club Topic].</p>
+            <h3>Sections</h3>
+            <ul>
+                <li><a href="https://www.example.com/about" target="_blank">About Us</a></li>
+                <li><a href="https://www.example.com/events" target="_blank">Our Events</a></li>
+                <li><a href="https://www.example.com/contact" target="_blank">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="organized">
+            <h3>Organized by</h3>
+            <div>Club Name - Founded in 2025</div>
+        </div>
+    </div>
+
+</body>
+</html>

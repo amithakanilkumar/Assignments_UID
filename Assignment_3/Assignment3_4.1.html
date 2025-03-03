@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image</title>
+    <style>
+        img {
+            width: 100%;
+            max-width: 800px;
+        }
+        @media (max-width: 600px) {
+            img {
+                content: url('https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg');
+            }
+        }
+        @media (min-width: 1500px) {
+            img {
+                content: url('https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg');
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <img src="https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg" alt="Responsive Image">
+
+</body>
+</html>
